@@ -1,0 +1,25 @@
+# Maven build output
+target/
+*.class
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# Local sensitive configuration (Do NOT commit real database passwords)
+config.properties
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+
+# Log files
+*.log
