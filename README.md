@@ -143,11 +143,17 @@ Security is an important part of InvenTrack.
 
 ### 1. Existing `products` Table (Preserved Intact)
 Your existing table in `inventory_db` is **never** dropped, altered, or overwritten:
-* `product_id INT AUTO_INCREMENT PRIMARY KEY`
-* `product_name VARCHAR(100) NOT NULL`
-* `category VARCHAR(50)`
-* `quantity INT NOT NULL DEFAULT 0`
-* `price DECIMAL(10,2) NOT NULL`
+```sql
+USE inventory_db;
+
+CREATE TABLE IF NOT EXISTS products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(100) NOT NULL,
+    category VARCHAR(50),
+    quantity INT NOT NULL DEFAULT 0,
+    price DECIMAL(10,2) NOT NULL
+);
+```
 
 ### 2. Companion `users` Table
 To support application logins, a companion `users` table is created:
