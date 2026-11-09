@@ -185,7 +185,7 @@ CREATE TABLE IF NOT EXISTS users (
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/InvenTrack.git
+git clone https://github.com/merwin-antony/InvenTrack.git
 ```
 
 ### 2. Open the Project
